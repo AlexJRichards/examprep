@@ -1,0 +1,14 @@
+A i ) Collections in java is a framework that allows you to store and manipulate a set of objects.
+
+Two interfaces in the collections framework include set and list.
+
+A ii ) Byte, Short, Integer, Char, Float, Double, Boolean, Character
+
+List<Integer> l = new ArrayList<Integer>();
+
+A iii ) Generics means that you can type cast an object into another object from its super class , for example obj t = new objsubclass();
+Advantages are you can store them all in the same list for example, even though they are of a different type and also it eliminates having to cast an object into a different type
+
+
+???Generics allow objects to be passed as parameters to classes, methods and interfaces. They are defined like <...>
+Because java is strongly typed it allows the compiler to check if items in a collection are of the correct type. There is no need for casting when retrieving items from the collection and it avoids the ClassCastException.

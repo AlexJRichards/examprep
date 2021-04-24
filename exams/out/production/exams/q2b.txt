@@ -1,0 +1,4 @@
+They could be redesigned so that Animal could be a superclass and different animals could inherit from it,
+they could still be added to the list in zoo and each animal could have different functions for example a bird could fly while a fish could swim
+they could also have methods with the same name as others but implement differently by overloading a method such as a speak method.
+A dog would woof while a cat would meow.
