@@ -1,3 +1,5 @@
+import java.io.File;
+import java.nio.file.Paths;
 import java.util.Scanner;
 
 public class Sum {
@@ -7,22 +9,19 @@ public class Sum {
             System.out.println("One arg expected");
             System.exit(1);
         }
-        Scanner scan = new Scanner(args[0]);
+        int total = 0;
         try {
+            Scanner scan = new Scanner(new File(args[0]));
+
             while (scan.hasNextLine()){
                 String line = scan.nextLine();
-                StringBuffer str = new StringBuffer();
-                for(char c : line.toCharArray()){
-                    if (Character.isDigit(c)){
-                        str.append(c);
-                    } else {
-                        System.out.println(str.toString());
-                        str.delete(0,str.length());
-                    }
-                }
+                String numberOnly = line.replaceAll("[^0-9]", "");
+                total += Integer.valueOf(numberOnly);
+                System.out.println(numberOnly);
             }
         } catch (Exception e ){
             e.printStackTrace();
         }
+        System.out.println(total + " is total");
     }
 }
